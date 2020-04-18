@@ -1,0 +1,59 @@
+.b-none {
+    border: none
+}
+
+.fs-2 {
+    font-size: 1.8vh;
+}
+
+.fs-3 {
+    font-size: 2.2vh;
+}
+
+.banner-area{
+    background: url(img/homebg.jpg) center no-repeat;
+    background-size: cover;
+}
+.overlay-bg {
+    background-color: rgba(0,0,0,0.8)
+}
+
+.opacity-0 {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.bg-lightgrey {
+    background: #f9f9ff;;
+}
+
+.far, .fas {
+    color: #96E92B;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #96E92B;
+    border-color: #96E92B;
+}
+
+.btn-primary:hover {
+    color: #88DA1D;
+    background: none;
+    border-color: #88DA1D;
+}
+
+.btn-success {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.btn-success:hover {
+    color: white;
+    background-color: #96E92B;
+    border-color: #96E92B;;
+}
+
+.carousel-indicators .active {
+    background-color: #96E92B !important;
+}
