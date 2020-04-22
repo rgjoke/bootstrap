@@ -2,6 +2,10 @@
     border: none
 }
 
+.fs-1 {
+    font-size: 1.6vh;
+}
+
 .fs-2 {
     font-size: 1.8vh;
 }
@@ -10,16 +14,16 @@
     font-size: 2.2vh;
 }
 
+.dropdown-menu a:hover {
+    color: #96E92B !important;
+}
+
 .banner-area{
     background: url(img/homebg.jpg) center no-repeat;
     background-size: cover;
 }
 .overlay-bg {
     background-color: rgba(0,0,0,0.8)
-}
-
-.opacity-0 {
-    background-color: rgba(0,0,0,0) !important;
 }
 
 .bg-lightgrey {
@@ -54,6 +58,47 @@
     border-color: #96E92B;;
 }
 
-.carousel-indicators .active {
-    background-color: #96E92B !important;
+.carousel-indicators li {
+    background: grey;
+    width: 12px;
+    height: 12px;
 }
+
+.carousel-indicators .active {
+    background: #96E92B;
+}
+
+
+
+.single-blog a {
+    text-decoration: none;
+    color: black;
+}
+
+.single-blog:hover a {
+    color: #96E92B;
+    text-decoration: none;
+}
+
+.single-blog img{
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single-blog:hover img {
+    transform: scale(1.1);
+}
+ .bg-blue {
+    background: #04091e;
+ }
+
+ .social-link:hover {
+     color: #96E92B;
+ }
+
+ .social-link {
+     color: grey;
+ }

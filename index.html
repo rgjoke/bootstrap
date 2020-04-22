@@ -8,8 +8,8 @@
     <link href='fontawesome/css/all.css' rel='stylesheet'>
     <title>ColorLib</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex fixed-top opacity-0">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset='20'>
+    <nav class="navbar navbar-expand-lg d-flex fixed-top" id='navbar'>
         <img src='img/logo.png' class="navbar-brand ml-5" href="#">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,10 +41,10 @@
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PAGES
                     </a>
-                    <div class="dropdown-menu bg-dark mt-2 ml-2 b-none" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item-none nav-link fs-2 text-white" href="#">Action</a>
-                        <a class="dropdown-item-none nav-link fs-2 text-white" href="#">Another action</a>
-                        <a class="dropdown-item-none nav-link fs-2 text-white" href="#">Something else here</a>
+                    <div class="dropdown-menu bg-light mt-2 ml-2 b-none" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item nav-link fs-1 text-dark" href="#">Blog Single</a>
+                        <a class="dropdown-item nav-link fs-1 text-dark" href="#">Catagory</a>
+                        <a class="dropdown-item nav-link fs-1 text-dark" href="#">Elements</a>
                     </div>
                 </li>
             </ul>
@@ -116,14 +116,14 @@
                 </div>
             </div>
         </div>
-        <div class='container mt-5 mb-5'>
+        <div class='container mt-5'>
             <div class='row d-flex justify-content-center'>
                 <div class='col-lg-6 mt-5 mb-5'>
                     <h2 class='text-right text-muted'><b class='text-dark'>Music</b> gives soul to the universe,
                     <br> wings to the <b class='text-dark'>mind</b>, flight<br> to the <b class='text-dark'>imagination</b>.</h2>
                 </div>
                 <div class='col-lg-6 mt-5 fs-3'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    <p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                      voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -131,41 +131,52 @@
             </div>
         </div>
     </section>
-    <section class='exhibition-area bg-lightgrey' style='height: 800px;'>
+    <section class='exhibition-area bg-lightgrey' >
         <div class='container'>
-            <div class='mt-5 pt-5'>
-                <div class='text-center mt-5 pt-5'>
+            <div class=''>
+                <div class='text-center pt-5 mt-5'>
                     <h1>Ongoin Exhibition from the scratch</h1>
                     <p class='text-muted'>Who are extremely love with eco friendly system.</p>
                 </div>
                 <div class='row'>
                     <div class='col-md-12'>
                         <div id='blogCarousel' class='carousel slide' data-ride='carousel'>
+                            <div class='mt-5'>
+                                <ol class='carousel-indicators' style='bottom: -30px'>
+                                    <li data-target='#blogCarousel' data-slide-to='0' class='active'></li>
+                                    <li data-target='#blogCarousel' data-slide-to='1'></li>
+                                </ol>
+                            </div>
 
-                            <div class='carousel-inner'>
-
-                                <div class='carousel-item active'>
+                            <div class='carousel-inner mb-5'>
+                                <div class='carousel-item active mb-5'>
                                     <div class='row'>
-                                        <div class='col-md-4 mt-5 text-left'>
+                                        <div class='col-md-4 text-left'>
                                             <img src='img/slider/1.jpg' alt='slide 1' style='max-width: 100%'>
-                                            <a href='#' class='btn btn-success mt-4'>Travel</a>
-                                            <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            <div>
+                                                <a href='#' class='btn btn-success mt-4'>Travel</a>
+                                                <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            </div>
                                             <h5 class='mt-3 font-weight-bold'>Portable latest blog for women</h5>
                                             <p class='text-muted'>Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.</p>
                                             <p><b>31st January, 2020</b></p>
                                         </div>
-                                        <div class='col-md-4 mt-5 text-left'>
+                                        <div class='col-md-4 text-left'>
                                             <img src='img/slider/2.jpg' alt='slide 2' style='max-width: 100%'>
-                                            <a href='#' class='btn btn-success mt-4'>Travel</a>
-                                            <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            <div>
+                                                <a href='#' class='btn btn-success mt-4'>Travel</a>
+                                                <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            </div>
                                             <h5 class='mt-3 font-weight-bold'>Portable latest blog for women</h5>
                                             <p class='text-muted'>Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.</p>
                                             <p><b>31st January, 2020</b></p>
                                         </div>
-                                        <div class='col-md-4 mt-5 text-left'>
+                                        <div class='col-md-4 text-left'>
                                             <img src='img/slider/3.jpg' alt='slide 3' style='max-width: 100%'>
-                                            <a href='#' class='btn btn-success mt-4'>Travel</a>
-                                            <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            <div>
+                                                <a href='#' class='btn btn-success mt-4'>Travel</a>
+                                                <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            </div>
                                             <h5 class='mt-3 font-weight-bold'>Portable latest blog for women</h5>
                                             <p class='text-muted'>Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.</p>
                                             <p><b>31st January, 2020</b></p>
@@ -175,46 +186,242 @@
 
                                 <div class='carousel-item'>
                                     <div class='row'>
-                                        <div class='col-md-4 mt-5 text-left'>
+                                        <div class='col-md-4 text-left'>
                                             <img src='img/slider/1.jpg' alt='slide 1' style='max-width: 100%'>
-                                            <a href='#' class='btn btn-success mt-4'>Travel</a>
-                                            <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            <div>
+                                                <a href='#' class='btn btn-success mt-4'>Travel</a>
+                                                <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            </div>
                                             <h5 class='mt-3 font-weight-bold'>Portable latest blog for women</h5>
                                             <p class='text-muted'>Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.</p>
                                             <p><b>31st January, 2020</b></p>
                                         </div>
-                                        <div class='col-md-4 mt-5 text-left'>
+                                        <div class='col-md-4 text-left'>
                                             <img src='img/slider/2.jpg' alt='slide 2' style='max-width: 100%'>
-                                            <a href='#' class='btn btn-success mt-4'>Travel</a>
-                                            <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            <div>
+                                                <a href='#' class='btn btn-success mt-4'>Travel</a>
+                                                <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            </div>
                                             <h5 class='mt-3 font-weight-bold'>Portable latest blog for women</h5>
                                             <p class='text-muted'>Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.</p>
                                             <p><b>31st January, 2020</b></p>
                                         </div>
-                                        <div class='col-md-4 mt-5 text-left'>
+                                        <div class='col-md-4 text-left'>
                                             <img src='img/slider/3.jpg' alt='slide 3' style='max-width: 100%'>
-                                            <a href='#' class='btn btn-success mt-4'>Travel</a>
-                                            <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            <div>
+                                                <a href='#' class='btn btn-success mt-4'>Travel</a>
+                                                <a href='#' class='btn btn-success mt-4'>Life Style</a>
+                                            </div>
                                             <h5 class='mt-3 font-weight-bold'>Portable latest blog for women</h5>
                                             <p class='text-muted'>Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.</p>
                                             <p><b>31st January, 2020</b></p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <ol class='carousel-indicators' style='bottom: -35px'>
-                                <li data-target='#blogCarousel' data-slide-to='0' class='active bg-secondary'></li>
-                                <li data-target='#blogCarousel' data-slide-to='1' class=bg-secondary></li>
-                            </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<script src='/js/script.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <section class='events'>
+        <div class='container'>
+            <div class='event-text mt-5'>
+                <div class='text-center mt-5 pt-5'>
+                    <h1><b>Checkout our Upcoming Events</b></h1>
+                    <p class=text-muted>Who are in extremely love with eco friendly system.</p>
+                </div>
+            </div>
+            <div class='row mb-5'>
+                <div class='col-md-6 event-left'>
+                    <div class='single event mt-5'>
+                        <img src='img/Events/1.jpg' alt class='img-fluid'>
+                        <h4 class='mt-4'>Event on the rock solid carbon</h4>
+                        <h6 class='text-muted'><span class='text-dark'>21st Febuary</span> at Central goverment museum</h6>
+                        <p class='text-muted'>inappropriate behavior is often laughed off as “boys will be boys,”
+                         women face higher conduct standards especially.</p>
+                         <a href='#' class='btn btn-primary text-uppercase'>view details</a>
+                    </div>   
+                    <div class='single event mt-5'>
+                        <img src='img/Events/3.jpg' alt class='img-fluid'>
+                        <h4 class='mt-4'>Event on the rock solid carbon</h4>
+                        <h6 class='text-muted'><span class='text-dark'>21st Febuary</span> at Central goverment museum</h6>
+                        <p class='text-muted'>inappropriate behavior is often laughed off as “boys will be boys,”
+                         women face higher conduct standards especially.</p>
+                         <a href='#' class='btn btn-primary text-uppercase'>view details</a>
+                    </div>  
+                </div>
+                <div class='col-md-6 event-right'>
+                    <div class='single event mt-5'>
+                        <h4 class='mt-4'>Event on the rock solid carbon</h4>
+                        <h6 class='text-muted'><span class='text-dark'>21st Febuary</span> at Central goverment museum</h6>
+                        <p class='text-muted'>inappropriate behavior is often laughed off as “boys will be boys,”
+                         women face higher conduct standards especially.</p>
+                         <a href='#' class='btn btn-primary text-uppercase'>view details</a>
+                         <img src='img/Events/2.jpg' alt class='img-fluid mt-4'>
+                    </div>   
+                    <div class='single event mt-5'>
+                        <h4 class='mt-4'>Event on the rock solid carbon</h4>
+                        <h6 class='text-muted'><span class='text-dark'>21st Febuary</span> at Central goverment museum</h6>
+                        <p class='text-muted'>inappropriate behavior is often laughed off as “boys will be boys,”
+                         women face higher conduct standards especially.</p>
+                         <a href='#' class='btn btn-primary text-uppercase'>view details</a>
+                         <img src='img/Events/4.jpg' alt class='img-fluid mt-4'>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='blog'>
+        <div class='container'>
+            <div class='row d-flex justify-content-center'>
+                <div class='col-md-8 mt-5 pt-5 text-center'>
+                    <h1>Latest From Our Blog</h1>
+                    <p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class='row mt-5 mb-5'>
+                <div class='col-lg-3 col-md-6 mt-5 single-blog'>
+                    <div class='thumb'>
+                        <img src='img/Blog/b1.jpg' alt>
+                    </div>
+                    <div class='mt-3 bg-dark' style='width: 115px'>
+                        <p class='text-muted text-center'>10 Jan 2020</p>
+                    </div>
+                    <a href='#' class='link'>
+                        <h5>Addiction When Gambling Becomes A Problem</h5>
+                    </a>
+                    <p class='text-muted'>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                    <div class='d-flex justify-content-between'>
+                        <p class='fs-2'><i class="far fa-heart mt-1 text-muted mr-1"></i>15 Likes</p>
+                        <p class='fs-2'><i class="far fa-comment text-muted mr- mt-1"></i>02 Comments</p>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-6 mt-5 single-blog'>
+                    <div class='thumb'>
+                        <img src='img/Blog/b2.jpg' alt>
+                    </div>
+                    <div class='mt-3 bg-dark' style='width: 115px'>
+                        <p class='text-muted text-center'>10 Jan 2020</p>
+                    </div>
+                    <a href='#' class='link'>
+                        <h5>Addiction When Gambling Becomes A Problem</h5>
+                    </a>
+                    <p class='text-muted'>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                    <div class='d-flex justify-content-between'>
+                        <p class='fs-2'><i class="far fa-heart mt-1 text-muted mr-1"></i>15 Likes</p>
+                        <p class='fs-2'><i class="far fa-comment text-muted mr-1 mt-1"></i>02 Comments</p>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-6 mt-5 single-blog'>
+                    <div class='thumb'>
+                        <img src='img/Blog/b3.jpg' alt>
+                    </div>
+                    <div class='mt-3 bg-dark' style='width: 115px'>
+                        <p class='text-muted text-center'>10 Jan 2020</p>
+                    </div>
+                    <a href='#' class='link'>
+                        <h5>Addiction When Gambling Becomes A Problem</h5>
+                    </a>
+                    <p class='text-muted'>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                    <div class='d-flex justify-content-between'>
+                        <p class='fs-2'><i class="far fa-heart mt-1 text-muted mr-1"></i>15 Likes</p>
+                        <p class='fs-2'><i class="far fa-comment text-muted mr-1 mt-1"></i>02 Comments</p>
+                    </div>
+                </div>
+                <div class='col-lg-3 col-md-6 mt-5 single-blog'>
+                    <div class='thumb'>
+                        <img src='img/Blog/b4.jpg' alt>
+                    </div>
+                    <div class='mt-3 bg-dark' style='width: 115px'>
+                        <p class='text-muted text-center'>10 Jan 2020</p>
+                    </div>
+                    <a href='#' class='link'>
+                        <h5>Addiction When Gambling Becomes A Problem</h5>
+                    </a>
+                    <p class='text-muted'>inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                    <div class='d-flex justify-content-between'>
+                        <p class='fs-2'><i class="far fa-heart mr-1 mt-1 text-muted"></i>15 Likes</p>
+                        <p class='fs-2'><i class="far fa-comment text-muted mr-1 mt-1 "></i>02 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class='gallery bg-blue'>
+        <div class='container'>
+            <div class='row d-flex justify-content-center'>
+                <div class='col-md-8 mt-5 pt-5 text-center text-white'>
+                    <h1>Our Exhibition Gallery</h1>
+                    <p class='text-muted'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class='row mt-5'>
+                <img src='img/Gallary/g1.jpg' alt class='col-sm-4' style='height: 200px; padding: 10px;'>
+                <img src='img/Gallary/g3.jpg' alt class='col-sm-2' style='height: 200px; padding: 10px;'>
+                <img src='img/Gallary/g5.jpg' alt class='col-sm-3' style='height: 200px; padding: 10px;'>
+                <img src='img/Gallary/g7.jpg' alt class='col-sm-3' style='height: 200px; padding: 10px;'>
+
+                <img src='img/Gallary/g2.jpg' alt class='col-sm-2' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g4.jpg' alt class='col-sm-3' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g6.jpg' alt class='col-sm-2' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g8.jpg' alt class='col-sm-3' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g10.jpg' alt class='col-sm-2' style='height: 200px; padding: 10px'>
+
+                <img src='img/Gallary/g12.jpg' alt class='col-sm-3' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g11.jpg' alt class='col-sm-3' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g3.jpg' alt class='col-sm-2' style='height: 200px; padding: 10px'>
+                <img src='img/Gallary/g4.jpg' alt class='col-sm-4 mb-5' style='height: 200px; padding: 10px'>
+            </div>
+        </div>
+    </section>
+    <footer class='footer'>
+        <div class='container'>
+            <div class='row mb-5 pb-5'>
+                <div class='col-lg-5 mt-5'>
+                    <h5><b>About Us</b></h5>
+                    <p class='text-muted mt-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                     do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    <p class='text-muted mt-5'>Copyright ©2020 All rights reserved | This template is made with by Ruslan Gilfanov</p>
+                </div>
+                <div class='col-lg-4 mt-5'>
+                    <h5><b>Newsletter</b></h5>
+                    <p class='mt-3 text-muted'>Stay update with our latest</p>
+                    <div class="input-group row">
+                        <input type="text" class="form-control col-sm-9 ml-3" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="arrow">
+                        <div class="input-group-append">
+                          <span class="input-group-text" style='background-color: #96E92B;' id="arrow"><i class="fas fa-arrow-right text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-lg-2 ml-lg-5 mt-5'>
+                    <h5><b>Follow Us</b></h5>
+                    <p class='text-muted mt-3'>Let us be social</p>
+                    <div class='d-flex justify-content-start'>
+                        <a href='#' class='social-link mr-3'>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href='#' class='social-link mr-3'>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href='#' class='social-link mr-3'>
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href='#' class='social-link'>
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/jquery-3.5.0.min.js"></script>
 <script src='js/bootstrap.min.js'></script>
+<script src='js/script.js'></script>
 </body>
 </html>
